@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FCC: Survey Form</title>
+</head>
+
+<body>
+    <div class="forms-container">
+        <header>
+            <h1 id="title">Comida japonesa</h1>
+            <p id="description">Conte-nos qual seu prato de <em>comida japonesa</em> preferido!</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Nome</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Preencha seu nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Preencha seu email" required>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Idade (opcional)</label>
+                <input type="number" name="age" id="number" class="form-control" placeholder="Preencha sua idade" min="0" max="100">
+            </div>
+            <div class="form-group">
+                <label for="place">Onde você geralmente come comida japonesa?</label>
+                <select name="place" id="dropdown" class="form-control" required>
+                    <option disabled selected value>Selecione uma opção</option>
+                    <option value="casa">Casa</option>
+                    <option value="restaurante">Restaurante</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>Você usa hashi?</legend>
+                    <div>
+                        <input type="radio" name="hashi" id="sim" value="sim">
+                        <label for="sim">Sim</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="hashi" id="nao" value="nao">
+                        <label for="nao">Não</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>Qual dos pratos abaixo você come?</legend>
+                    <div>
+                        <input type="checkbox" name="pratos" id="sushi" value="sushi">
+                        <label for="sushi">Sushi</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="pratos" id="sashimi" value="sashimi">
+                        <label for="sashimi">Sashimi</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="pratos" id="hot-roll" value="hot-roll">
+                        <label for="hot-roll">Hot-roll</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="pratos" id="uramaki" value="uramaki">
+                        <label for="uramaki">Uramaki</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="pratos" id="hossomaki" value="hossomaki">
+                        <label for="hossomaki">Hossomaki</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <p>Conte-nos qual foi sua melhor experiência com comida japonesa:</p>
+                <textarea name="comentatio" id="comentario" cols="30" rows="10" placeholder="Digite aqui..."></textarea>
+            </div>
+            <div>
+                <button type="submit" id="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script>const projectName = 'survey-form';</script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>

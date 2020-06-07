@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Noto+Sans+JP&family=Roboto+Mono&display=swap');
+
+/*font-family: 'Baloo Thambi 2', cursive;
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Roboto Mono', monospace;*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 11pt;
+    margin: 0;
+    display: block;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: url(./background-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.forms-container {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(25px);
+    width: 80%;
+    padding: 2em;
+    margin: 40px 10% 40px 10%;
+}
+
+header {
+    font-family: 'Baloo Thambi 2', cursive;
+    color: rgb(240, 88, 0);
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 2px 2px peru;
+    margin-bottom: 1em;
+}
+
+header h1, header p {
+    margin: 0px;
+}
+
+header p {
+    font-size: 0.8em;
+}
+
+.form-group {
+    text-align: left;
+    padding: 0.25em;
+    margin: 0 2em 1.25em 2em;
+    border-color: peru;
+    border-width: 2pt;
+    border-style: solid;
+    border-radius: 15px;
+    background-color: rgba(205, 134, 63, 0.3);
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.form-control,
+#comentario {
+    display: block;
+    margin: 1em 2% 1em 2%;
+    width: 96%;
+    height: 3em;
+}
+
+.form-group label,
+.form-group p {
+    padding-left: 2%;
+}
+
+#comentario {
+    height: 12em;
+}
+
+#submit {
+    display: block;
+    width: 90%;
+    margin: 2em 5% 0 5%;
+    padding: 0.5em;
+    background: rgba(244, 165, 96, 0.5);
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 15px;
+}
+
+@media (min-width: 480px) {
+    body {
+        font-size: 14pt;
+    }
+}
+
+@media (min-width: 1000px) {
+    body {
+        font-size: 16pt;
+    }    
+}

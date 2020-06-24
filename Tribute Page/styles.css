@@ -1,0 +1,49 @@
+html {
+    font-size: 16px;
+    --orange: #FB9B14;
+    --dark-blue: #5384A4;
+    --light-blue: hsl(210, 22%, 56%);
+    --background: hsl(210, 22%, 90%);
+    font-family: 'Roboto', sans-serif;
+    width: 95vw;
+}
+
+body {
+    background-color: var(--background);
+    /*padding: 0 3em 2em 3em;*/
+}
+
+h1 {
+    font-size: 3.5em;
+    text-align: center;
+    text-shadow: 1px 1px dimgrey;
+    background-color: var(--light-blue);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#subtitle {
+    text-align: right;
+    font-size: 1em;
+    opacity: 0.5;
+    font-style: italic;
+    justify-content: right;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+figure {
+    float: right;
+    width: 200px;
+    height: auto;
+}
+
+figcaption {
+    text-align: center;
+    color: var(--orange);
+    text-shadow: 2px 2px var(--dark-blue);
+}
